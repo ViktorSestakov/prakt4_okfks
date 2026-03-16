@@ -11,7 +11,7 @@ namespace Test
     public class TestTriangleCI
     {
         [Fact]
-        public void CreateTriangle()
+        public void CreateTriangle() // крутой комменатрий для пулл реквеста!
         {
             ClassLibrary1.Triangle tri = new ClassLibrary1.Triangle();
             Assert.NotNull(tri);
