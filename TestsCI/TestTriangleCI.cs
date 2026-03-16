@@ -11,7 +11,7 @@ namespace Test
     public class TestTriangleCI
     {
         [Fact]
-        public void CreateTriangle()
+        public void CreateTriangle() // крутой комменатрий для пулл реквеста!
         {
             ClassLibrary1.Triangle tri = new ClassLibrary1.Triangle();
             Assert.NotNull(tri);
@@ -38,7 +38,7 @@ namespace Test
 
             var ex = Assert.Throws<ArgumentException>(() => tri.Area());
 
-            Assert.Contains("Недопустимые числа!", ex.Message.ToString());
+            Assert.Contains("error!", ex.Message.ToString());
         }
 
         [Fact]
@@ -62,7 +62,7 @@ namespace Test
 
             var ex = Assert.Throws<ArgumentException>(() => tri.Perimeter());
 
-            Assert.Contains("Недопустимые числа!", ex.Message.ToString());
+            Assert.Contains("error!", ex.Message.ToString());
         }
     }
 }

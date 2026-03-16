@@ -52,7 +52,7 @@ namespace ClassLibrary1
         {
             if (SideA < 1 || SideB < 1 || SideC < 1)
             {
-                throw new ArgumentException("Недопустимые числа!");
+                throw new ArgumentException("error!");
             }
 
             double p = (SideA + SideB + SideC) / 2;
@@ -64,7 +64,7 @@ namespace ClassLibrary1
         {
             if (SideA < 1 || SideB < 1 || SideC < 1)
             {
-                throw new ArgumentException("Недопустимые числа!");
+                throw new ArgumentException("error!");
             }
 
             return checked(SideA + SideB + SideC);
