@@ -38,7 +38,7 @@ namespace ClassLibrary1
         {
             if (Width < 1 || Height < 1)
             {
-                throw new ArgumentException("Недопустимые числа!");
+                throw new ArgumentException("error!");
             }
 
             return checked(Width * Height);
@@ -47,7 +47,7 @@ namespace ClassLibrary1
         {
             if (Width < 1 || Height < 1)
             {
-                throw new ArgumentException("Недопустимые числа!");
+                throw new ArgumentException("error!");
             }
 
             return checked(2 * (Width + Height));

@@ -43,7 +43,7 @@ namespace Test
 
             var ex = Assert.Throws<ArgumentException>(() => rectangle.Area());
 
-            Assert.Contains("Недопустимые числа!", ex.Message.ToString());
+            Assert.Contains("error!", ex.Message.ToString());
         }
 
         [Fact]
@@ -69,7 +69,7 @@ namespace Test
 
             var ex = Assert.Throws<ArgumentException>(() => rectangle.Perimeter());
 
-            Assert.Contains("Недопустимые числа!", ex.Message.ToString());
+            Assert.Contains("error!", ex.Message.ToString());
         }
     }
 }
